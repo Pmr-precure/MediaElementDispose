@@ -23,8 +23,9 @@
             App.Current.MainPage = new MainPage();
         }
 
-        private void ContentPage_Unloaded(object sender, EventArgs e)
+        private async void ContentPage_Unloaded(object sender, EventArgs e)
         {
+            await Task.Delay(1000);
             mediaElement?.Handler?.DisconnectHandler();
         }
     }
