@@ -63,9 +63,7 @@ namespace TestProject
                 return;
             }
 
-            var certs = new X509CertificateCollection();
-            certs.Add(certificate);
-
+        
 
             // Set up the RestClient options
             var options = new RestClientOptions("https://google.com")
